@@ -1,0 +1,252 @@
+/* Page reset values */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+/* NavBar Styling */
+.navbar {
+    background-color: rgb(32, 31, 31);
+    color: white;
+    position: fixed;
+    width: 100vw;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20%;
+    z-index: 10;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(175, 170, 170);
+}
+
+#profile {
+    color: white;
+}
+
+.nav-title {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: rgb(44, 179, 233);
+    color: white;
+    padding: 0 .5em;
+    border: none;
+    transition: all 150ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+/* Container settings for all body content */
+
+.container {
+    width: 100vw;
+    padding: 100px 20%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    gap: 2em;
+}
+
+
+/* Left Content Settings  */
+.leftContent {
+    flex: 2;
+}
+
+/* Left Content User Card box */
+.usercard {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 20px;
+}
+.topBox {
+    min-height: 100px;
+    background-color: rgb(31, 157, 189);
+    border: rgb(31,157,189) solid 2px;
+}
+.usercard #userCircle {
+    width: 100px;
+    position: absolute;
+    border: rgba(128, 128, 128, 0.788) solid 2px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: white;
+    top: 10%;
+    left: 7%;
+}
+
+#editProfile a {
+    text-decoration: underline;
+}
+
+.bottomBox {
+    background-color: white;
+    border: rgba(128, 128, 128, 0.788) solid 2px;
+    border-top: none;
+    padding: 30px;
+    padding-top: 30px;
+}
+
+#location {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#description {
+    margin: .25em 0;
+}
+
+#editProfile {
+    color: navy;
+}
+
+/* Left content Education box */
+
+/* Settings for all 3 grey title boxes */
+.title {
+    background-color: rgb(32, 31, 31);
+    border: rgb(32, 31, 31) solid 2px;
+    color: white;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.content {
+    border: rgba(128, 128, 128, 0.788) solid 2px;
+    padding: 10px;
+}
+
+.education h4 {
+    color: grey;
+}
+
+.education .title, .education .content {
+    border-top: none;
+    padding-left: 30px;
+}
+
+
+/* Right Content Settings  */
+.rightContent {
+    flex: 1;
+}
+
+.connectionrequests button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: none;
+}
+
+.connectionrequests {
+    margin-bottom: 20px;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 0px;
+}
+
+.content .image p {
+    font-weight: bold;
+    flex: 3;
+}
+
+.requests a{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.friends a{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px;
+    display: block;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+#todd {
+    background-image: url(todd-s.jpg);
+}
+
+#phil {
+    background-image: url(phil-s.jpg);
+}
+
+.image .accept {
+    background-image: url(accept-circle.png);
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+}
+
+
+.image .close {
+    background-image: url(close-circle.png);
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+}
+
+
+.yourConnections button {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: none;
+}
+
+#adrien {
+    background-image: url(adrien-s.jpg);
+}
+
+#anne {
+    background-image: url(anne-s.jpg);
+}
+
+#alayne {
+    background-image: url(alayne-s.jpg);
+}
+
+#arry {
+    background-image: url(arry-s.jpg);
+}
+
+#viewMore, #viewMore a {
+    border-top: none;
+    color: navy;
+}

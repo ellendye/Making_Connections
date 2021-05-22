@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ffd2134fa2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="nav-links">
+            <li class="nav-title">Profile</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" id ="profile">My Profile</a></li>
+            <li><a href="#">Find Connections</a></li>
+        </ul>
+        <button class="btn">Sign Out</button>
+    </div>
+    <div class="container">
+        <div class="leftContent">
+            <div class="usercard">
+                <div class="topBox">
+                    <img src="user-circle.png" alt="User Circle" id="userCircle">
+                </div>
+                <div class="bottomBox">
+                    <h1 id="profileName">Jane Doe</h1>
+                    <div id="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h2>Seattle</h2>
+                    </div>
+                    <div id="description">
+                        <p>Developer | Engineer | Problem Solver</p>
+                        <p>Master of shadows and the Internet!</p>
+                    </div>
+                    <div id="editProfile">
+                        <i class="fas fa-cog"></i>
+                        <a onclick="changeName(this)">edit profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="education">
+                <div class="title">
+                    <h3>Education</h3>
+                </div>
+                <div class="content">
+                    <h2>Coding Dojo - Full Stack Bootcamp</h2>
+                    <h4>Dec 2019 - Mar 2020</h4>
+                    <p>Triple black belt in Mern, Python and C#</p>
+                </div>
+            </div>
+        </div>
+        <div class="rightContent">    
+            <div class="connectionrequests">
+                <div class="title">
+                    <button id="requestCount">2</button>
+                    <h3>Connection Requests</h3>
+                </div>
+                <div class="content">
+                    <div class="image requests" id="first">
+                        <a href="" id="todd"></a>
+                        <p>Todd E</p>
+                        <button class="accept" id="firstPerson" onclick="changeCount(this)"></button>
+                        <button class="close" id="firstPerson" onclick="changeCount(this)"></button>
+                    </div>
+                    <div class="image requests" id="second">
+                        <a href="" id="phil"></a>
+                        <p>Phil K</p>
+                        <button class="accept" id="secondPerson" onclick="changeCount(this)"></button>
+                        <button class="close" id="secondPerson" onclick="changeCount(this)"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="yourConnections">
+                <div class="title">
+                    <button id="friendCount">500</button>
+                    <h3>Your Connections</h3>
+                </div>
+            </div>
+            <div class="content">
+                <div class="image friends">
+                    <a href="" id="adrien"></a>
+                    <p>Adrien D</p>
+                </div>
+                <div class="image friends">
+                    <a href="" id="anne"></a>
+                    <p>Anne J</p> 
+                </div>
+                <div class="image friends">
+                    <a href="" id="alayne"></a>
+                    <p>Alayne T</p>
+                </div>
+                <div class="image friends">
+                    <a href="" id="arry"></a>
+                    <p>Arry Y</p>
+                </div>
+            </div>
+            <div class="content" id="viewMore">
+                <a href="">View More</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
